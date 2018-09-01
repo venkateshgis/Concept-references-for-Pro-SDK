@@ -1,0 +1,5 @@
+ArcGIS Pro ICommand Interface is IPlugInWrapper
+Each command and all UI elements identified by a unique identifier (id attribute in DAML)
+ICommand proCmd = FrameworkApplication.GetPlugInWrapper(DAML.Button.esri_mapping_newMapButton) as ICommand;
+if(proCmd.CanExecute(null))
+  proCmd.Execute(null);
